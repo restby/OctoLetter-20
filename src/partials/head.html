@@ -2,8 +2,8 @@
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <!-- <meta name="color-scheme" content="light dark" />
-  <meta name="supported-color-schemes" content="light dark" /> -->
+  <meta name="color-scheme" content="light dark" />
+  <meta name="supported-color-schemes" content="light dark" />
   <title>Octo Browser</title>
   <style type="text/css">
     table {
@@ -29,7 +29,8 @@
 
     p,
     span,
-    ul li {
+    ul li,
+    b {
       font-size: 18px;
       line-height: 25px;
       font-weight: 400;
@@ -47,9 +48,13 @@
       margin: 0;
     }
 
-    b {
-      font-size: 18px;
-      line-height: 25px;
+    b,
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
       font-weight: 700;
       color: #727272;
     }
@@ -71,6 +76,9 @@
         padding-left: 16px !important;
         padding-right: 16px !important;
       }
+      .tablet-padding.two-cols {
+        padding-bottom: 0 !important;
+      }
 
       .column--logo {
         max-width: 173px !important;
@@ -91,6 +99,44 @@
         line-height: 17px !important;
       }
 
+      .partners.two-cols .column,
+      .two-cols__img-wrap img {
+        width: 100% !important;
+        max-width: 100% !important;
+      }
+      .two-cols__text {
+        padding-bottom: 42px !important;
+      }
+
+      .item.two-cols .column:first-child {
+        max-width: 86.36% !important;
+      }
+
+      .two-cols__head-wrap,
+      .two-cols__text-wrap {
+        padding-right: 24px;
+      }
+      .item.two-cols .column:last-child {
+        max-width: 54px !important;
+      }
+      .two-cols__img,
+      .two-cols__text {
+        padding-left: 0 !important;
+        padding-right: 0 !important;
+      }
+
+      .two-cols__img table {
+        width: 100% !important;
+      }
+
+      .two-cols__text-wrap {
+        padding-bottom: 0 !important;
+      }
+
+      .social {
+        padding-top: 0 !important;
+      }
+
       .social__wrap p {
         text-align: center;
       }
@@ -101,10 +147,19 @@
         padding-left: 32px !important;
         padding-right: 32px !important;
       }
+
+      .item.two-cols .column:first-child {
+        max-width: 78.91% !important;
+      }
+
+      .two-cols__head-wrap,
+      .two-cols__text-wrap {
+        padding-right: 18px;
+      }
     }
 
     /* Custom Dark Mode Colors */
-    /* :root {
+    :root {
       color-scheme: light dark;
       supported-color-schemes: light dark;
     }
@@ -121,13 +176,13 @@
         border-color: #ffffff !important;
       }
 
-      .main-block__wrap h1,
-      .main-block__wrap h2,
-      .main-block__wrap h3,
-      .main-block__wrap p,
-      .main-block__wrap span,
-      .main-block__wrap li,
-      .main-block__wrap b {
+      .bg-dark h1,
+      .bg-dark h2,
+      .bg-dark h3,
+      .bg-dark p,
+      .bg-dark span,
+      .bg-dark li,
+      .bg-dark b {
         color: #ffffff !important;
       }
 
@@ -150,7 +205,7 @@
       .footer__wrap span {
         color: #ffffff !important;
       }
-    } */
+    }
   </style>
 
   <!--[if (gte mso 9)|(IE)]>
